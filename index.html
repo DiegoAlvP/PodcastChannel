@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast Channel</title>
+    <!--Estilos CSS-->
+    <link rel="stylesheet" href="styles/SASS/main.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main_container">
+        <header class="navbar">
+            <div class="navbar-logo">
+                <img src="./images/logo.svg" class="navbar-img" alt="logo del sitio">
+            </div>
+            <input type="checkbox" class="navbar-btn" id="navbtn">
+            <label for="navbtn" class="navbar-icon"></label>
+            <span class="navbar-nav"></span>
+            <nav class="navbar-navigation">
+                <ul class="navbar-options">
+                    <li class="navbar-item"><a href="#episode" class="navbar-link">EPISODIOS</a></li>
+                    <li class="navbar-item"><a href="#we" class="navbar-link">NOSOTROS</a></li>
+                    <li class="navbar-item"><a href="#guests" class="navbar-link">ENTREVISTAS</a></li>
+                    <li class="navbar-item"><a href="#themes" class="navbar-link">TÓPICOS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="entry_content">
+            <div class="entry_content-content">
+                <h1 class="entry_content-title">Hello<span class="decor">world</span> <span class="salto">pale blue dot</span><span class="point"></span></h1>
+                <p class="entry_content-description1">
+                    Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
+                </p>
+                <p class="entry_content-description2">
+                    El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada
+                    15 días.
+                </p>
+                <a href="#we" class="entry_content-link">CONOCÉ MÁS</a>
+            </div>
+        </section>
+        <section class="episode" id="episode">
+            <svg class="svg_top" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="white" points="0,100 100,0 0,0" />
+            </svg>
+                <h2 class="episode-title">Episodios</h2>
+            <div class="episode-items">
+                <div class="episode-item">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/17vmKs8QLYZmPFvoBrzUeX" class="episode-iframe"></iframe>
+                </div>
+                <div class="episode-item">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt" class="episode-iframe"></iframe>
+                </div>
+                <div class="episode-item">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD" class="episode-iframe"></iframe>
+                </div>
+                <div class="episode-item">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ" class="episode-iframe"></iframe>
+                </div>
+            </div>
+
+            <svg class="svg_bottom" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="white" points="0,100 100,0 100,100" />
+            </svg>
+        </section>
+        <section class="core_content" id="we">
+            <div class="core_content-image">
+                <img src="./images/phone.png" alt="Phone" class="core_content-phone">
+            </div>
+                <h2 class="core_content-title">De dónde venimos</h2>
+            <div class="core_content-detail">
+                <p class="core_content-descrip">
+                Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.
+                </p>
+                <p class="descrip">
+                Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                </p>
+            </div>
+        </section>
+        <section class="guests" id="guests">
+            <h2 class="guests-title">Invitadas/os estelares</h2>
+            <div class="guests-items">
+                <div class="guests-item">
+                    <img src="./images/grace-hopper.png" alt="Grace Hopper" class="guests-img">
+                </div>
+                <div class="guests-item">
+                    <img src="./images/Katie-Bouman.png" alt="Katie Bouman" class="guests-img">
+                </div>
+                <div class="guests-item">
+                    <img src="./images/Margaret_Hamilton.png" alt="Margaret Hamilton" class="guests-img">
+                </div>
+                <div class="guests-item">
+                    <img src="./images/E.R.A.Univac.png" alt="E.R.A.Univac" class="guests-img">
+                </div>
+                <div class="guests-item">
+                    <img src="./images/ComputerEniac.png" alt="Computer Eniac" class="guests-img">
+                </div>
+                <div class="guests-item">
+                    <img src="./images/susan-kare.png" alt="Susan Kare" class="guests-img">
+                </div>
+            </div>
+        </section>
+        <section class="themes" id="themes">
+            <h2 class="themes-title">Algunos de nuestros temas</h2>
+            <div class="themes-items">
+                <div class="themes-item">
+                    <img src="./images/icon_rem.svg" alt="Trabajo remoto" class="themes-icon">
+                    <p class="themes-name">Trabajo remoto</p>
+                </div>
+                <div class="themes-item">
+                    <img src="./images/icon_pro.svg" alt="Repensando la programación" class="themes-icon">
+                    <p class="themes-name-two">Repensando la programación</p>
+                </div>
+                <div class="themes-item">
+                    <img src="./images/icon_cod.svg" alt="Bases del código" class="themes-icon">
+                    <p class="themes-name">Bases del código</p>
+                </div>
+                <div class="themes-item">
+                    <img src="./images/icon_info.svg" alt="Seguridad informática" class="themes-icon">
+                    <p class="themes-name">Seguridad informática</p>
+                </div>
+            </div>
+        </section>
+        <section class="novelties">
+            <svg class="novelties-svg_top" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon fill="white" points="0,100 100,0 0,0"/>
+            </svg>
+            <div class="novelties-content">
+                <h2 class="novelties-title">¿Querés las últimas novedades?</h2>
+                <a href="#episode" class="novelties-link">ESCUCHÁ LOS EPISODIOS</a>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-copyright">                
+                <p class="footer-copyright-description">&copy; 2019- Hello blue pale dot</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.spotify.com/co/" target="_blank"><i class="fa fa-spotify"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://web.telegram.org/#/login" target="_blank"><i class="fa fa-telegram"></i></a>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>

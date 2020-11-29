@@ -1,0 +1,101 @@
+.novelties {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 341px;
+    background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    top: 42px;
+    bottom: -50px;
+
+    &-content {
+        width: 100%;
+    }
+
+    &-title {
+        width: 90vw;
+        height: 126px;
+        margin: 64px 16px 0;
+        text-align: center;
+        @include styleSubTitleSansW;
+    }
+
+    &-link {
+        @include ButtonMobile;
+        text-decoration: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        line-height: 3;
+        margin-top: 46px;
+    }
+    
+    &-link:hover {
+        background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        color: $color-font-secondary;
+        font-weight: 300;
+    }
+
+    &-svg_top {
+        position: absolute;
+        width: 100%;
+        height: 10vw;
+        top: -1px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .novelties {
+        height: 27em;
+
+        &-title {
+            width: 35%;
+            height: 4em;
+            margin: 2.3em auto 0;
+            font-size: 2.625em;
+        }
+
+        &-link {
+            width: 70%;
+            font-size: 1.0625em;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .novelties {
+        height: 32.375em;
+        top: 1.9em;
+        margin-bottom: 30px;
+
+        &-title {
+            height: 1.5em;
+            margin:  0 auto;
+            margin-top: 213px;
+            @include styleSubTitleSansWDesk;
+        }
+
+        &-link {
+            @include ButtonDesktopLower;
+            margin: 36px auto;
+            padding: 0;
+            line-height: 3.5;
+        }
+
+    }
+}
+
+@media screen and (min-width: 2560px) {
+
+    .novelties {  
+
+        &-svg_top {
+            height: 9vw;
+        }
+
+    }
+}

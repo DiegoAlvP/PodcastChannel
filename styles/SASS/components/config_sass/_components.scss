@@ -1,0 +1,37 @@
+@import 'conversionpx';
+@import 'variables';
+@import 'style_font';
+
+//Buttons
+//Buttons Mobile
+@mixin ButtonMobile {
+    width: pxtoem(288, $basepx);
+    height: pxtoem(48, $basepx);
+    color: $color-font-primary;
+    background-color: $bgc-button;
+    font-family: 'IBM Plex Mono-Medium', monospace;
+    font-weight: 600;
+    font-size: pxtoem(16, $basepx);
+}
+
+//Buttons Desktop
+@mixin ButtonDesktopHigher {
+    width: pxtoem(226, $basepx);
+    height: pxtoem(56, $basepx);
+    color: $color-font-primary;
+    background-color: $bgc-button;
+    font-family: 'IBM Plex Mono-Medium', monospace;
+    font-weight: 600;
+    font-size: pxtoem(18, $basepx);
+}
+
+//Buttons Desktop
+@mixin ButtonDesktopLower {
+    width: pxtoem(345, $basepx);
+    height: pxtoem(56, $basepx);
+    color: $color-font-primary;
+    background-color: $bgc-button;
+    font-family: 'IBM Plex Mono-Medium', monospace;
+    font-weight: 600;
+    font-size: pxtoem(18, $basepx);
+}

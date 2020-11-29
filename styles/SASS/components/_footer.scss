@@ -1,0 +1,119 @@
+.footer {
+    display: flex;
+    width: 100%;
+    height: 35%;
+    margin-top: 40px;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &-copyright {
+        width: 100%;
+        height: 22px;
+        justify-items: center;
+        text-align: center;
+    }
+
+    &-copyright-description {
+        height: 22px;
+        margin: 24px 45px 16px;
+        justify-items: center;
+        text-align: center;
+        @include styleContentMono;
+    }
+
+    &-social {
+        display: flex;
+        width: 100%;
+        margin: 16px 0 31px;
+        padding: 0;
+        justify-content: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    &-social .fa {
+        width: 16px;
+        margin-top: 16px;
+        padding: 0.3125em 1.1875em;
+        align-self: center;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .footer {
+
+        &-copyright {
+            font-size: 1.2em;
+        }
+
+        &-social .fa {
+            width: 2.1em;
+            padding: 0.3125em 1em;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .footer {
+        width: 98%;
+        line-height: 75px;
+        margin: 0;
+        align-items: center;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        &-copyright {
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            @include styleContentMonoDesk;
+            align-items: center;
+            width: fit-content;
+            padding-top: 36;
+            padding-left: 100px;
+        }
+
+        &-copyright-description {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            @include styleContentMonoDesk;
+        }
+
+        &-social {
+            width: 50%;
+            height: 100%;
+            margin: 0;
+            width: fit-content;
+            padding-top: 36;
+            padding-right: 100px;
+        }
+
+        &-social .fa {
+            width: 18px; 
+            height: 18px;
+            margin: 0;
+        }
+
+    }
+
+}
+
+@media screen and (min-width: 2560px) {
+
+    .footer {
+        line-height: 80px;
+
+        &-copyright-description {
+            font-size: 1.5em;
+        }
+
+    }
+
+}

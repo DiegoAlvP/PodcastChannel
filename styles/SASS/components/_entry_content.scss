@@ -1,0 +1,150 @@
+@import 'config_sass/style_font';
+@import 'config_sass/variables';
+@import 'config_sass/components';
+
+.entry_content {
+    display: flex;
+    width: 100%;
+    position: relative;
+
+    &-content {
+        width: 100%;        
+    }
+
+    &-title {
+        width: 80%;
+        @include styleTitleSans;
+        margin: 29px 16px 0;
+    }
+
+    &-title .decor {
+        text-decoration: line-through;
+    }
+
+    &-title .salto {
+        width: 100%;
+        display: block;
+    }
+
+    &-title .salto::after {
+        content: ".";
+        width: 36px;
+        color: #060A24;
+    }
+
+    &-description1 {
+        @include styleContentMono;
+        text-align: justify;
+        height: 66px;
+        margin: 16px 16px 0;
+    }
+
+    &-description2 {
+        display: none;
+    }
+
+    &-link {
+        @include ButtonMobile;
+        text-decoration: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        line-height: 3;
+    }
+    
+    &-link:hover {
+        background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+        color: $color-font-secondary;
+        font-weight: 300;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    
+    .entry_content {
+
+        &-title {
+            width: 70%;
+            margin: 29px 30px 0;
+            font-size: 3.125em;
+            text-align: justify;
+        }
+
+        &-description1 {
+            display: none;
+        }
+
+        &-description2 {
+            display: inline-block;
+            @include styleContentMono;
+            text-align: justify;
+            width: 92%;
+            height: 66px;
+            margin: 16px 30px 0;
+            font-size: 0.937em;
+        }
+
+        &-link {
+            width: 70%;
+            margin-top: 1em;
+            margin-bottom: 1em;
+            font-size: 1.0625em;            
+        }
+    }    
+}
+
+@media screen and (min-width: 1024px) {
+
+    .entry_content {
+        display: flex;
+        width: 100%;
+
+        &-content {
+            margin: 0;
+            padding: 0;
+        }
+
+        &-title {
+            display: inline-flex;
+            width: 80%;
+            margin: 0;
+            margin-left: 150px;
+            margin-top: 120px;
+            @include styleTitleSansDesk;
+        }
+
+        &-title .decor {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        &-title .salto::after {
+            content: ".";
+            width: 64px;
+            color:  #0000EC;
+        }
+
+        &-description1 {
+            display: none;
+        }
+
+        &-description2 {
+            display: inline-flex;
+            @include styleContentMonoDesk;
+            width: 60%;
+            margin: 0;
+            margin-left: 150px;
+        }
+
+        &-link {
+            margin-left: 150px;
+            margin-top: 56px;
+            margin-bottom: 0;
+            line-height: 3.5;
+            @include ButtonDesktopHigher;
+        }
+
+    }
+
+}

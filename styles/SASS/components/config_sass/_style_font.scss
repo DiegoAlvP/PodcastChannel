@@ -1,0 +1,80 @@
+@import 'conversionpx';
+@import 'variables';
+
+//Navigation
+//Buttons Desktop
+@mixin styleButtonMonoDesk {
+    color: $color-font-primary;
+    font-family: 'IBM Plex Mono';
+    font-size: pxtoem(16, $basepx);
+}
+//Buttons Mobile
+@mixin styleButtonMono {
+    color: $color-font-secondary;
+    font-family: 'IBM Plex Mono';
+    font-weight: 300;
+    font-size: pxtoem(16, $basepx);
+}
+
+//Mono
+//Contents Desktop
+@mixin styleContentMonoDesk {
+    color: $color-font-primary;
+    font-family: 'IBM Plex Mono';
+    font-size: pxtoem(16, $basepx);
+}
+//Contents Mobile
+@mixin styleContentMono {
+    color: $color-font-primary;
+    font-family: 'IBM Plex Mono', ;
+    font-size: pxtoem(14, $basepx);
+}
+
+//Sans
+//Titles Desktop
+@mixin styleTitleSansDesk {
+    color: $color-font-primary;
+    font-family: 'IBM Plex Sans';
+    font-size: pxtoem(64, $basepx);
+}
+//Titles Mobile
+@mixin styleTitleSans {
+    color: $color-font-primary;
+    font-family: 'IBM Plex Sans';
+    font-weight: 500;
+    font-size: pxtoem(36, $basepx);
+}
+//Sub Titles Whites Desktop
+@mixin styleSubTitleSansWDesk {
+    color: $color-font-secondary;
+    font-family: 'IBM Plex Sans';
+    font-size: pxtoem(48, $basepx);
+}
+//Sub Titles Whites Mobiles
+@mixin styleSubTitleSansW {
+    color: $color-font-secondary;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: pxtoem(36, $basepx);
+}
+//Sub Titles Blacks Desktop
+@mixin styleSubTitleSansBDesk {
+    color: $color-font-primary;
+    font-family: 'IBM Plex Sans';
+    font-size: pxtoem(48, $basepx);
+}
+//Sub Titles Blacks Mobile
+@mixin styleSubTitleSansB {
+    color: $color-font-primary;
+    font-family: 'IBM Plex Sans';
+    font-weight: 100;
+    font-size: pxtoem(36, $basepx);
+}
+
+//Icon Mobile - Desktop
+@mixin styleSubIconSans {
+    color: $color-font-primary;
+    font-family: 'IBM Plex San', sans-serif;
+    font-weight: 700;
+    font-size: pxtoem(24, $basepx);
+}
